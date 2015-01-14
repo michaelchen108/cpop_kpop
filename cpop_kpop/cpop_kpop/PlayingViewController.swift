@@ -14,7 +14,7 @@ class PlayingViewController: UIViewController {
     @IBOutlet var currentScore: UILabel!
     @IBOutlet var highScore: UILabel!
     var timer:NSTimer = NSTimer()
-    var score:Int = 0
+    var score: Int = 0
     var userDefaults = NSUserDefaults.standardUserDefaults()
     
     var highestscore = HighScore()
@@ -49,6 +49,9 @@ class PlayingViewController: UIViewController {
         
         if score > retrievedHighScore.highScore {
             highestscore.highScore = score
+            highestscore = HighScore()
+            highestscore.highScore = score
+            SaveHighScore().ArchiveHighScore(highScore: highestscore)
             highScore.text = NSString(format: "High Score: %3.d", score)
         }
     }
