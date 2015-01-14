@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47AC7E001A66074F00EBB68B /* FinalViewCountroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC7DFF1A66074F00EBB68B /* FinalViewCountroller.swift */; };
 		4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E945F1A65F340004B0992 /* AppDelegate.swift */; };
 		4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94611A65F340004B0992 /* OpeningViewController.swift */; };
 		4C4E94651A65F340004B0992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94631A65F340004B0992 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47AC7DFF1A66074F00EBB68B /* FinalViewCountroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewCountroller.swift; sourceTree = "<group>"; };
 		4C4E945A1A65F340004B0992 /* cpop_kpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpop_kpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E945E1A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E945F1A65F340004B0992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				4C4E945F1A65F340004B0992 /* AppDelegate.swift */,
 				4C4E94611A65F340004B0992 /* OpeningViewController.swift */,
 				4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */,
+				47AC7DFF1A66074F00EBB68B /* FinalViewCountroller.swift */,
 				4C4E94631A65F340004B0992 /* Main.storyboard */,
 				4C4E94661A65F340004B0992 /* Images.xcassets */,
 				4C4E94681A65F340004B0992 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 				4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */,
 				4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */,
 				4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */,
+				47AC7E001A66074F00EBB68B /* FinalViewCountroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				4C4E947B1A65F340004B0992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C4E947C1A65F340004B0992 /* Build configuration list for PBXNativeTarget "cpop_kpopTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				4C4E947E1A65F340004B0992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
