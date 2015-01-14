@@ -1,5 +1,5 @@
 //
-//  FinalVewCountroller.swift
+//  FinalViewController.swift
 //  cpop_kpop
 //
 //  Created by Seunghun Oh on 1/13/15.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class FinalViewCountroller: NSObject {
+class FinalViewController: NSObject {
    
 }
