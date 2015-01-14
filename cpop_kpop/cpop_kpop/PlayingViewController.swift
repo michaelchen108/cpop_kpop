@@ -15,22 +15,17 @@ class PlayingViewController: UIViewController {
     @IBOutlet var currentScore: UILabel!
     @IBOutlet var highScore: UILabel!
     var timer = NSTimer()
-    @IBAction func jayChou(sender: UIButton) {
-    }
-    
-    @IBAction func johnCho(sender: UIButton) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func jayChou(sender: AnyObject) {
+    @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: true)
     }
     
-    @IBAction func johnCho(sender: AnyObject) {
+    @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
     }
 

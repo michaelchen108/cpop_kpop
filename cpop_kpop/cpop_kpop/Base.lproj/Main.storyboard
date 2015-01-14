@@ -86,7 +86,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="johnCho:" destination="aC1-1k-ZFl" eventType="touchUpInside" id="W4l-k0-HsT"/>
+                                    <action selector="johnCho:" destination="aC1-1k-ZFl" eventType="touchUpInside" id="glO-A8-uoa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U2c-4l-VzR">
@@ -120,7 +120,6 @@
                     <connections>
                         <outlet property="currentScore" destination="MDB-f6-Sox" id="nmb-lE-huy"/>
                         <outlet property="highScore" destination="n4v-RU-nR1" id="Wop-pC-rSg"/>
-                        <outlet property="johnCho" destination="fii-Fa-jFY" id="RyE-tS-D19"/>
                         <outlet property="playImage" destination="QJx-ac-OKh" id="3tu-yh-LKD"/>
                     </connections>
                 </viewController>
