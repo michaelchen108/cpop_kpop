@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OpeningViewController.swift
 //  cpop_kpop
 //
 //  Created by Michael Chen on 1/13/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OpeningViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
