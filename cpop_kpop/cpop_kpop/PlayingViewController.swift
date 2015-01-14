@@ -24,7 +24,8 @@ class PlayingViewController: UIViewController {
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
         score = score + 1
-        currentScore.text = "Score: \(score)"
+        //currentScore.text = "Score: \(score)"
+        currentScore.text = NSString(format: "Score: %3.d", String(score))
     }
     
     @IBAction func johnCho(sender: UIButton) {
