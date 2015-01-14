@@ -13,6 +13,7 @@
 		4C4E94671A65F340004B0992 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94661A65F340004B0992 /* Images.xcassets */; };
 		4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94681A65F340004B0992 /* LaunchScreen.xib */; };
 		4C4E94761A65F340004B0992 /* cpop_kpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */; };
+		4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4C4E946F1A65F340004B0992 /* cpop_kpopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpop_kpopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E94741A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpop_kpopTests.swift; sourceTree = "<group>"; };
+		4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				4C4E945F1A65F340004B0992 /* AppDelegate.swift */,
 				4C4E94611A65F340004B0992 /* OpeningViewController.swift */,
+				4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */,
 				4C4E94631A65F340004B0992 /* Main.storyboard */,
 				4C4E94661A65F340004B0992 /* Images.xcassets */,
 				4C4E94681A65F340004B0992 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */,
 				4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */,
 				4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */,
 			);
