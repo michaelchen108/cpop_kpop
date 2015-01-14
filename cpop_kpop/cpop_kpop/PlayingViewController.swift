@@ -16,7 +16,6 @@ class PlayingViewController: UIViewController {
     var timer:NSTimer = NSTimer()
     var score: Int = 0
     var userDefaults = NSUserDefaults.standardUserDefaults()
-    
     var highestscore = HighScore()
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
 
@@ -44,7 +43,10 @@ class PlayingViewController: UIViewController {
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
         score = score + 1
+        
         //currentScore.text = "Score: \(score)"
+        
+        
         currentScore.text = NSString(format: "Score: %3.d", score)
         
         if score > retrievedHighScore.highScore {
