@@ -15,22 +15,61 @@ class PlayingViewController: UIViewController {
     @IBOutlet var highScore: UILabel!
     var timer:NSTimer = NSTimer()
     var score:Int = 0
+    var userDefaults = NSUserDefaults.standardUserDefaults()
+    
+    var highestscore = HighScore()
+    var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tentativeHighScore = retrievedHighScore.highScore
+        if tentativeHighScore >= 0 {
+            highScore.text = NSString(format: "High Score: %3.d", tentativeHighScore)
+        } else {
+            highestscore.highScore = 0
+            SaveHighScore().ArchiveHighScore(highScore: highestscore)
+            println(retrievedHighScore.highScore)
+            highScore.text = NSString(format: "High Score: %3.d", retrievedHighScore.highScore)
+        }
+        
+        
+        
+        /*check this place for info on how the high score was done. still trying to figure it out myself... http://stackoverflow.com/questions/25985450/saving-highscores-with-nsuserdefaults
+        */
+        
     }
     
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
         score = score + 1
         //currentScore.text = "Score: \(score)"
-        currentScore.text = NSString(format: "Score: %3.d", String(score))
+        currentScore.text = NSString(format: "Score: %3.d", score)
+        
+        if score > retrievedHighScore.highScore {
+            highestscore.highScore = score
+            highScore.text = NSString(format: "High Score: %3.d", score)
+        }
     }
     
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
     }
+    
+//    func setHighScore(highScore: Int) {
+//        userDefaults.setValue(highScore, forKey: "highscore")
+//        userDefaults.synchronize()
+//    }
+//    
+//    func getHighScore () -> Int {
+//        if let highscore = userDefaults.valueForKey("highscore") {
+//            return highscore
+//        }
+//        else {
+//            return 0
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
