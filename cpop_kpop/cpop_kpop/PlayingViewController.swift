@@ -16,6 +16,7 @@ class PlayingViewController: UIViewController {
     @IBOutlet var highScore: UILabel!
     @IBAction func jayChou(sender: UIButton) {
     }
+    
     @IBAction func johnCho(sender: UIButton) {
     }
     
@@ -40,7 +41,7 @@ class PlayingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     
     
 
