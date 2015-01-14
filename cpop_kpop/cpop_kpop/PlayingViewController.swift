@@ -21,8 +21,19 @@ class PlayingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //myButton.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
+        
+        var timer = NSTimer()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func start(sender: AnyObject) {
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "timer", userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func stop(sender: AnyObject) {
+        timer.invalidate()
+        timer == nil
     }
 
     override func didReceiveMemoryWarning() {
