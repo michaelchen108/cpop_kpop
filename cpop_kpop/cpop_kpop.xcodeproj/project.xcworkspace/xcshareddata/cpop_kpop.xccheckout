@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2731F746-0B53-464F-9A57-318B58114DA7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cpop_kpop</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CED37EB6634B5C9281F8F4108617123F20800805</key>
+		<string>github.com:michaelchen108/cpop_kpop.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cpop_kpop/cpop_kpop.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CED37EB6634B5C9281F8F4108617123F20800805</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:michaelchen108/cpop_kpop.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CED37EB6634B5C9281F8F4108617123F20800805</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CED37EB6634B5C9281F8F4108617123F20800805</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cpop_kpop</string>
+		</dict>
+	</array>
+</dict>
+</plist>
