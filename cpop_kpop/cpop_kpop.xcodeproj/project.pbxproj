@@ -346,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cpop_kpop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cpop_kpop;
 			};
 			name = Debug;
 		};
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cpop_kpop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cpop_kpop;
 			};
 			name = Release;
 		};
@@ -374,7 +374,7 @@
 				);
 				INFOPLIST_FILE = cpop_kpopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cpop_kpopTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cpop_kpop.app/cpop_kpop";
 			};
 			name = Debug;
@@ -389,7 +389,7 @@
 				);
 				INFOPLIST_FILE = cpop_kpopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cpop_kpopTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cpop_kpop.app/cpop_kpop";
 			};
 			name = Release;
