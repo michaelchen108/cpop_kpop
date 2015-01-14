@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C4E94591A65F340004B0992"
                BuildableName = "John or Jay?!.app"
-               BlueprintName = "John or Jay?!"
-               ReferencedContainer = "container:John or Jay?!.xcodeproj">
+               BlueprintName = "cpop_kpop"
+               ReferencedContainer = "container:cpop_kpop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C4E946E1A65F340004B0992"
                BuildableName = "John or Jay?!Tests.xctest"
-               BlueprintName = "John or Jay?!Tests"
-               ReferencedContainer = "container:John or Jay?!.xcodeproj">
+               BlueprintName = "cpop_kpopTests"
+               ReferencedContainer = "container:cpop_kpop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C4E946E1A65F340004B0992"
                BuildableName = "John or Jay?!Tests.xctest"
-               BlueprintName = "John or Jay?!Tests"
-               ReferencedContainer = "container:John or Jay?!.xcodeproj">
+               BlueprintName = "cpop_kpopTests"
+               ReferencedContainer = "container:cpop_kpop.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4E94591A65F340004B0992"
             BuildableName = "John or Jay?!.app"
-            BlueprintName = "John or Jay?!"
-            ReferencedContainer = "container:John or Jay?!.xcodeproj">
+            BlueprintName = "cpop_kpop"
+            ReferencedContainer = "container:cpop_kpop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4E94591A65F340004B0992"
             BuildableName = "John or Jay?!.app"
-            BlueprintName = "John or Jay?!"
-            ReferencedContainer = "container:John or Jay?!.xcodeproj">
+            BlueprintName = "cpop_kpop"
+            ReferencedContainer = "container:cpop_kpop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4E94591A65F340004B0992"
             BuildableName = "John or Jay?!.app"
-            BlueprintName = "John or Jay?!"
-            ReferencedContainer = "container:John or Jay?!.xcodeproj">
+            BlueprintName = "cpop_kpop"
+            ReferencedContainer = "container:cpop_kpop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

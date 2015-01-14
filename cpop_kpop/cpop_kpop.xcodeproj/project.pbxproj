@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C4E945A1A65F340004B0992 /* John or Jay?!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "John or Jay?!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E945A1A65F340004B0992 /* cpop_kpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpop_kpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E945E1A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E945F1A65F340004B0992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4E94611A65F340004B0992 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
 		4C4E94641A65F340004B0992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C4E94661A65F340004B0992 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C4E94691A65F340004B0992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4C4E946F1A65F340004B0992 /* John or Jay?!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John or Jay?!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E946F1A65F340004B0992 /* cpop_kpopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpop_kpopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E94741A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpop_kpopTests.swift; sourceTree = "<group>"; };
 		4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		4C4E945B1A65F340004B0992 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C4E945A1A65F340004B0992 /* John or Jay?!.app */,
-				4C4E946F1A65F340004B0992 /* John or Jay?!Tests.xctest */,
+				4C4E945A1A65F340004B0992 /* cpop_kpop.app */,
+				4C4E946F1A65F340004B0992 /* cpop_kpopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C4E94591A65F340004B0992 /* John or Jay?! */ = {
+		4C4E94591A65F340004B0992 /* cpop_kpop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C4E94791A65F340004B0992 /* Build configuration list for PBXNativeTarget "John or Jay?!" */;
+			buildConfigurationList = 4C4E94791A65F340004B0992 /* Build configuration list for PBXNativeTarget "cpop_kpop" */;
 			buildPhases = (
 				4C4E94561A65F340004B0992 /* Sources */,
 				4C4E94571A65F340004B0992 /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = "John or Jay?!";
+			name = cpop_kpop;
 			productName = cpop_kpop;
-			productReference = 4C4E945A1A65F340004B0992 /* John or Jay?!.app */;
+			productReference = 4C4E945A1A65F340004B0992 /* cpop_kpop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C4E946E1A65F340004B0992 /* John or Jay?!Tests */ = {
+		4C4E946E1A65F340004B0992 /* cpop_kpopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C4E947C1A65F340004B0992 /* Build configuration list for PBXNativeTarget "John or Jay?!Tests" */;
+			buildConfigurationList = 4C4E947C1A65F340004B0992 /* Build configuration list for PBXNativeTarget "cpop_kpopTests" */;
 			buildPhases = (
 				4C4E946B1A65F340004B0992 /* Sources */,
 				4C4E946C1A65F340004B0992 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				4C4E94711A65F340004B0992 /* PBXTargetDependency */,
 			);
-			name = "John or Jay?!Tests";
+			name = cpop_kpopTests;
 			productName = cpop_kpopTests;
-			productReference = 4C4E946F1A65F340004B0992 /* John or Jay?!Tests.xctest */;
+			productReference = 4C4E946F1A65F340004B0992 /* cpop_kpopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4C4E94551A65F340004B0992 /* Build configuration list for PBXProject "John or Jay?!" */;
+			buildConfigurationList = 4C4E94551A65F340004B0992 /* Build configuration list for PBXProject "cpop_kpop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C4E94591A65F340004B0992 /* John or Jay?! */,
-				4C4E946E1A65F340004B0992 /* John or Jay?!Tests */,
+				4C4E94591A65F340004B0992 /* cpop_kpop */,
+				4C4E946E1A65F340004B0992 /* cpop_kpopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		4C4E94711A65F340004B0992 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C4E94591A65F340004B0992 /* John or Jay?! */;
+			target = 4C4E94591A65F340004B0992 /* cpop_kpop */;
 			targetProxy = 4C4E94701A65F340004B0992 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -342,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cpop_kpop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "John or Jay?!";
+				PRODUCT_NAME = cpop_kpop;
 			};
 			name = Debug;
 		};
@@ -352,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cpop_kpop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "John or Jay?!";
+				PRODUCT_NAME = cpop_kpop;
 			};
 			name = Release;
 		};
@@ -370,7 +370,7 @@
 				);
 				INFOPLIST_FILE = cpop_kpopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "John or Jay?!Tests";
+				PRODUCT_NAME = cpop_kpopTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cpop_kpop.app/cpop_kpop";
 			};
 			name = Debug;
@@ -385,7 +385,7 @@
 				);
 				INFOPLIST_FILE = cpop_kpopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "John or Jay?!Tests";
+				PRODUCT_NAME = cpop_kpopTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cpop_kpop.app/cpop_kpop";
 			};
 			name = Release;
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C4E94551A65F340004B0992 /* Build configuration list for PBXProject "John or Jay?!" */ = {
+		4C4E94551A65F340004B0992 /* Build configuration list for PBXProject "cpop_kpop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C4E94771A65F340004B0992 /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C4E94791A65F340004B0992 /* Build configuration list for PBXNativeTarget "John or Jay?!" */ = {
+		4C4E94791A65F340004B0992 /* Build configuration list for PBXNativeTarget "cpop_kpop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C4E947A1A65F340004B0992 /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C4E947C1A65F340004B0992 /* Build configuration list for PBXNativeTarget "John or Jay?!Tests" */ = {
+		4C4E947C1A65F340004B0992 /* Build configuration list for PBXNativeTarget "cpop_kpopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C4E947D1A65F340004B0992 /* Debug */,
