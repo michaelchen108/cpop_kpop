@@ -14,7 +14,7 @@ class PlayingViewController: UIViewController {
     @IBOutlet var currentScore: UILabel!
     @IBOutlet var highScore: UILabel!
     var timer:NSTimer = NSTimer()
-    var score = 0
+    var score:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,12 @@ class PlayingViewController: UIViewController {
     
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
-        score += 1
+        score = score + 1
+        currentScore.text = "Score: \(score)"
     }
     
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
-    }
-    
-    func updateScore() {
-        currentScore.text = "\(score)"
     }
 
     override func didReceiveMemoryWarning() {
