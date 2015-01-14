@@ -10,6 +10,15 @@ import UIKit
 
 class PlayingViewController: UIViewController {
 
+    @IBOutlet var playImage: UIImageView!
+    
+    @IBOutlet var currentScore: UILabel!
+    @IBOutlet var highScore: UILabel!
+    @IBAction func jayChou(sender: UIButton) {
+    }
+    @IBAction func johnCho(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
