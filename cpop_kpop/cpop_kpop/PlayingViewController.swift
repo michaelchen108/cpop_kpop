@@ -127,7 +127,11 @@ class PlayingViewController: UIViewController {
     func displayScoreScreen() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let scoreScreen = storyBoard.instantiateViewControllerWithIdentifier("FinalViewController") as FinalViewController
-        scoreScreen.setScore(score)
+        
+        NSLog("\(score)")
+        
+        scoreScreen.setScore(self.score)
+        
         self.presentViewController(scoreScreen, animated:true, completion:nil)
     }
     

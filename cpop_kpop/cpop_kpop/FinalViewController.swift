@@ -11,7 +11,9 @@ import UIKit
 class FinalViewController: UIViewController {
 
     @IBOutlet var finalScore: UILabel!
-    
+
+    var finishedScore = 0
+
     @IBAction func playAgain(sender: UIButton) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let openingScreen = storyBoard.instantiateViewControllerWithIdentifier("OpeningViewController") as OpeningViewController
@@ -22,6 +24,8 @@ class FinalViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        finalScore.text = NSString(format: "Score: %3.d", finishedScore)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +34,8 @@ class FinalViewController: UIViewController {
     }
     
     func setScore(gameScore: Int) {
-        if var label = finalScore{
-            finalScore.text = NSString(format: "Score: %3.d", gameScore)
-        }
+        
+        finishedScore = gameScore
     }
     
 

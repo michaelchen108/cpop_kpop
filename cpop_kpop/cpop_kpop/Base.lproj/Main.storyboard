@@ -157,7 +157,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WXF-6V-vVN"/>
                     <connections>
-                        <outlet property="finalScore" destination="DoT-yg-k0v" id="c78-yK-H8s"/>
+                        <outlet property="finalScore" destination="DoT-yg-k0v" id="n6O-Eb-jrt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUk-1d-2Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
