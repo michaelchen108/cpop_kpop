@@ -93,7 +93,7 @@ class PlayingViewController: UIViewController {
             score = score + 1
             setImage()
         } else {
-            self.navigationController.pushViewController(FinalViewController, animated: true)
+            displayScoreScreen()
         }
     }
     
@@ -103,10 +103,20 @@ class PlayingViewController: UIViewController {
             score = score + 1
             setImage()
         } else {
-            self.navigationController.pushViewController(FinalViewController, animated: true)
+            displayScoreScreen()
         }
 
     }
+    
+    
+    
+    func displayScoreScreen() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let scoreScreen = storyBoard.instantiateViewControllerWithIdentifier("FinalViewController") as FinalViewController
+        self.presentViewController(scoreScreen, animated:true, completion:nil)
+    }
+    
+    
     
 
     override func didReceiveMemoryWarning() {

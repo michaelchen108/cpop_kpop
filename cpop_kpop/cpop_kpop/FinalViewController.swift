@@ -8,14 +8,12 @@
 
 import UIKit
 
-class FinalViewController: NSObject {
+class FinalViewController: UIViewController {
     
     
+    @IBOutlet var finalScore: UILabel!
     
-    
-    
-    
-    
+    finalScore.text = NSString(format: "Score: %3.d", score)
     
    
 }
