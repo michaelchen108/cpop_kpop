@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cpop_kpop/FinalViewController.swift"
-            timestampString = "442911049.807018"
+            timestampString = "443086992.281571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21">
+            startingLineNumber = "24"
+            endingLineNumber = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

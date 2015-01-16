@@ -28,6 +28,8 @@ class PlayingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        score = 0
+        
         for (var i = 0; i < 6; i++) {
             if(i % 2 == 0)
             {
@@ -60,6 +62,10 @@ class PlayingViewController: UIViewController {
         
     }
     
+    func getScore() -> Int {
+        return score
+    }
+    
     
     func setImage () {
         var randInt = Int(arc4random_uniform(UInt32(imageCache.count)))
@@ -74,12 +80,8 @@ class PlayingViewController: UIViewController {
     
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
-
         
-        //currentScore.text = "Score: \(score)"
-        
-        
-        currentScore.text = NSString(format: "Score: %3.d", score)
+        updateScore()
         
         if score > retrievedHighScore.highScore {
             highestscore.highScore = score
@@ -100,12 +102,26 @@ class PlayingViewController: UIViewController {
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
         if isJay != true {
-            score = score + 1
+            updateScore()
             setImage()
         } else {
             displayScoreScreen()
         }
+        
+        if score > retrievedHighScore.highScore {
+            highestscore.highScore = score
+            highestscore = HighScore()
+            highestscore.highScore = score
+            SaveHighScore().ArchiveHighScore(highScore: highestscore)
+            highScore.text = NSString(format: "High Score: %3.d", score)
+        }
 
+    }
+    
+    
+    func updateScore() {
+        score = score + 1
+        currentScore.text = NSString(format: "Score: %3.d", score)
     }
     
     
