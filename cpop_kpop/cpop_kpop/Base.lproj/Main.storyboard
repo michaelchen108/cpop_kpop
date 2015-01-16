@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1075" y="366"/>
         </scene>
-        <!--View Controller-->
+        <!--Final View Controller-->
         <scene sceneID="cLL-Yu-lst">
             <objects>
-                <viewController storyboardIdentifier="FinalViewController" id="Stg-eT-D5H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalViewController" id="Stg-eT-D5H" customClass="FinalViewController" customModule="cpop_kpop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N4Y-v1-yYj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="finalScore" destination="DoT-yg-k0v" id="Wgu-uh-Ode"/>
+                        <outlet property="finalScore" destination="DoT-yg-k0v" id="KlN-yy-zW8"/>
                         <outlet property="score" destination="DoT-yg-k0v" id="A3r-sF-x7H"/>
                     </connections>
                 </viewController>
