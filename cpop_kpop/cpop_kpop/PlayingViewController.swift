@@ -18,13 +18,22 @@ class PlayingViewController: UIViewController {
     var userDefaults = NSUserDefaults.standardUserDefaults()
     var highestscore = HighScore()
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
-    var chosenJayPictures = []
-    var chosenJohnPictures = []
+    var imageCache = [String: UIImage]()
+//    var chosenJayPictures = []
+//    var chosenJohnPictures = []
+    
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        imageCache["Jay"] = UIImage(named: "chou_jay.jpg")
+        playImage.image = imageCache["Jay"]
+        
+        
         let tentativeHighScore = retrievedHighScore.highScore
         if tentativeHighScore >= 0 {
             highScore.text = NSString(format: "High Score: %3.d", tentativeHighScore)
@@ -34,36 +43,34 @@ class PlayingViewController: UIViewController {
             println(retrievedHighScore.highScore)
             highScore.text = NSString(format: "High Score: %3.d", retrievedHighScore.highScore)
         }
-        
-        //playImage.image = something
-        
+
         
         /*check this place for info on how the high score was done. still trying to figure it out myself... http://stackoverflow.com/questions/25985450/saving-highscores-with-nsuserdefaults
         */
         
     }
     
-    func imageChooser () {
-        //picking an image randomly from the two folders
-        fm = NSFileManager.defaultManager()
-        
-        
-        
-    }
-    
-//this is an objective-C method method for getting the files, let's see if we can get it to work for swift
--(void)getContentOfImageDirectory
-{
-    //Emptying the image directory content array
-    [_imageDirectoryContent removeAllObjects];
-
-    //Using NSFileManager to load the content of the image directory in a temporary array
-    NSFileManager *fm = [NSFileManager defaultManager];
-    NSArray *tempArray = [fm contentsOfDirectoryAtURL: _imageDirectory includingPropertiesForKeys: _imageProperties options: NSDirectoryEnumerationSkipsPackageDescendants error: nil];
-
-    //Copy the temporary array into the imageDirectoryContent before returning the NSMutableArray imageDirectoryContent
-    [_imageDirectoryContent addObjectsFromArray:tempArray];
-}
+//    func imageChooser () {
+//        //picking an image randomly from the two folders
+//        fm = NSFileManager.defaultManager()
+//        
+//        
+//        
+//    }
+//    
+////this is an objective-C method method for getting the files, let's see if we can get it to work for swift
+//-(void)getContentOfImageDirectory
+//{
+//    //Emptying the image directory content array
+//    [_imageDirectoryContent removeAllObjects];
+//
+//    //Using NSFileManager to load the content of the image directory in a temporary array
+//    NSFileManager *fm = [NSFileManager defaultManager];
+//    NSArray *tempArray = [fm contentsOfDirectoryAtURL: _imageDirectory includingPropertiesForKeys: _imageProperties options: NSDirectoryEnumerationSkipsPackageDescendants error: nil];
+//
+//    //Copy the temporary array into the imageDirectoryContent before returning the NSMutableArray imageDirectoryContent
+//    [_imageDirectoryContent addObjectsFromArray:tempArray];
+//}
 
     
     

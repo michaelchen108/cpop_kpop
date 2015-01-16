@@ -15,6 +15,7 @@
 		4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94681A65F340004B0992 /* LaunchScreen.xib */; };
 		4C4E94761A65F340004B0992 /* cpop_kpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */; };
 		4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */; };
+		4C60D63C1A68C77A008ACB6F /* chou_jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */; };
 		4CE403C91A664F8500FB6EA9 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE403C81A664F8500FB6EA9 /* HighScore.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		4C4E94741A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpop_kpopTests.swift; sourceTree = "<group>"; };
 		4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
+		4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chou_jay.jpg; path = ../../../../github/cpop_kpop/cpop_kpop/cpop_kpop/chou_jay.jpg; sourceTree = "<group>"; };
 		4CE403C81A664F8500FB6EA9 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		4C4E945C1A65F340004B0992 /* cpop_kpop */ = {
 			isa = PBXGroup;
 			children = (
+				4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */,
 				4C4E945F1A65F340004B0992 /* AppDelegate.swift */,
 				4C4E94611A65F340004B0992 /* OpeningViewController.swift */,
 				4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */,
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4E94651A65F340004B0992 /* Main.storyboard in Resources */,
+				4C60D63C1A68C77A008ACB6F /* chou_jay.jpg in Resources */,
 				4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */,
 				4C4E94671A65F340004B0992 /* Images.xcassets in Resources */,
 			);
