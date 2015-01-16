@@ -30,7 +30,9 @@ class FinalViewController: UIViewController {
     }
     
     func setScore(gameScore: Int) {
-        finalScore.text = NSString(format: "Score: %3.d", gameScore)
+        if var label = finalScore{
+            finalScore.text = NSString(format: "Score: %3.d", gameScore)
+        }
     }
     
 
