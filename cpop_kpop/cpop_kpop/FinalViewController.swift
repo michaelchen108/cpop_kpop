@@ -13,7 +13,8 @@ class FinalViewController: UIViewController {
     
     @IBOutlet var finalScore: UILabel!
     
-    finalScore.text = NSString(format: "Score: %3.d", score)
-    
+    override func viewDidLoad() {
+        finalScore.text = NSString(format: "Score: %3.d", score)
+    }
    
 }
