@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473C315F1A68C90D00ACF4AC /* chou_jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C315E1A68C90D00ACF4AC /* chou_jay.jpg */; };
+		473C31621A68C98C00ACF4AC /* chou_jay1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C31601A68C98C00ACF4AC /* chou_jay1.jpg */; };
+		473C31631A68C98C00ACF4AC /* chou_jay2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C31611A68C98C00ACF4AC /* chou_jay2.jpg */; };
 		47AC7E001A66074F00EBB68B /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC7DFF1A66074F00EBB68B /* FinalViewController.swift */; };
 		4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E945F1A65F340004B0992 /* AppDelegate.swift */; };
 		4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94611A65F340004B0992 /* OpeningViewController.swift */; };
@@ -15,7 +18,6 @@
 		4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94681A65F340004B0992 /* LaunchScreen.xib */; };
 		4C4E94761A65F340004B0992 /* cpop_kpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */; };
 		4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */; };
-		4C60D63C1A68C77A008ACB6F /* chou_jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */; };
 		4CE403C91A664F8500FB6EA9 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE403C81A664F8500FB6EA9 /* HighScore.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		473C315E1A68C90D00ACF4AC /* chou_jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay.jpg; sourceTree = "<group>"; };
+		473C31601A68C98C00ACF4AC /* chou_jay1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay1.jpg; sourceTree = "<group>"; };
+		473C31611A68C98C00ACF4AC /* chou_jay2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay2.jpg; sourceTree = "<group>"; };
 		47AC7DFF1A66074F00EBB68B /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		4C4E945A1A65F340004B0992 /* cpop_kpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpop_kpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E945E1A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +47,6 @@
 		4C4E94741A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E94751A65F340004B0992 /* cpop_kpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpop_kpopTests.swift; sourceTree = "<group>"; };
 		4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
-		4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chou_jay.jpg; path = ../../../../github/cpop_kpop/cpop_kpop/cpop_kpop/chou_jay.jpg; sourceTree = "<group>"; };
 		4CE403C81A664F8500FB6EA9 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +89,9 @@
 		4C4E945C1A65F340004B0992 /* cpop_kpop */ = {
 			isa = PBXGroup;
 			children = (
-				4C60D63B1A68C77A008ACB6F /* chou_jay.jpg */,
+				473C315E1A68C90D00ACF4AC /* chou_jay.jpg */,
+				473C31601A68C98C00ACF4AC /* chou_jay1.jpg */,
+				473C31611A68C98C00ACF4AC /* chou_jay2.jpg */,
 				4C4E945F1A65F340004B0992 /* AppDelegate.swift */,
 				4C4E94611A65F340004B0992 /* OpeningViewController.swift */,
 				4C4E947F1A65F7C2004B0992 /* PlayingViewController.swift */,
@@ -205,9 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4E94651A65F340004B0992 /* Main.storyboard in Resources */,
-				4C60D63C1A68C77A008ACB6F /* chou_jay.jpg in Resources */,
+				473C31621A68C98C00ACF4AC /* chou_jay1.jpg in Resources */,
+				473C31631A68C98C00ACF4AC /* chou_jay2.jpg in Resources */,
 				4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */,
 				4C4E94671A65F340004B0992 /* Images.xcassets in Resources */,
+				473C315F1A68C90D00ACF4AC /* chou_jay.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
