@@ -18,22 +18,19 @@ class FinalViewController: UIViewController {
         self.presentViewController(openingScreen, animated:true, completion:nil)
     }
     
-    
-
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let playScreen = PlayingViewController()
-        finalScore.text = NSString(format: "Score: %3.d", playScreen.getScore())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setScore(gameScore: Int) {
+        finalScore.text = NSString(format: "Score: %3.d", gameScore)
     }
     
 
