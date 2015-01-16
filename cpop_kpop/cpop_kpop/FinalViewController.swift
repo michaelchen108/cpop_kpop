@@ -14,12 +14,13 @@ class FinalViewController: UIViewController {
     
     let playScreen = PlayingViewController()
     
-    finalScore.textLabel = NSString(format: "Score: %3.d", playScreen.getScore())
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        finalScore.text = NSString(format: "Score: %3.d", playScreen.getScore())
     }
 
     override func didReceiveMemoryWarning() {

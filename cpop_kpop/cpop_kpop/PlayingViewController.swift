@@ -81,8 +81,6 @@ class PlayingViewController: UIViewController {
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
         
-        updateScore()
-        
         if score > retrievedHighScore.highScore {
             highestscore.highScore = score
             highestscore = HighScore()
@@ -92,7 +90,7 @@ class PlayingViewController: UIViewController {
         }
         
         if isJay {
-            score = score + 1
+            updateScore()
             setImage()
         } else {
             displayScoreScreen()
