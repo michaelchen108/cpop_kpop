@@ -18,9 +18,11 @@ class PlayingViewController: UIViewController {
     var userDefaults = NSUserDefaults.standardUserDefaults()
     var highestscore = HighScore()
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
-    var imageCache = [String: UIImage]()
-//    var chosenJayPictures = []
-//    var chosenJohnPictures = []
+    var counter = 0
+    var jayImageCache = [Int: UIImage]()
+    var johnImageCache = [Int: UIImage]()
+    var chosenJayPictures = []
+    var chosenJohnPictures = []
     
 
 
@@ -29,9 +31,11 @@ class PlayingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        for (var i = 0; i < 3; i++) {
+            jayImageCache[i] = UIImage(named: "chou_jay \(i) .jpg")
+        }
         
-        imageCache["Jay"] = UIImage(named: "chou_jay.jpg")
-        playImage.image = imageCache["Jay"]
+        playImage.image = jayImageCache[0]
         
         
         let tentativeHighScore = retrievedHighScore.highScore
@@ -49,30 +53,7 @@ class PlayingViewController: UIViewController {
         */
         
     }
-    
-//    func imageChooser () {
-//        //picking an image randomly from the two folders
-//        fm = NSFileManager.defaultManager()
-//        
-//        
-//        
-//    }
-//    
-////this is an objective-C method method for getting the files, let's see if we can get it to work for swift
-//-(void)getContentOfImageDirectory
-//{
-//    //Emptying the image directory content array
-//    [_imageDirectoryContent removeAllObjects];
-//
-//    //Using NSFileManager to load the content of the image directory in a temporary array
-//    NSFileManager *fm = [NSFileManager defaultManager];
-//    NSArray *tempArray = [fm contentsOfDirectoryAtURL: _imageDirectory includingPropertiesForKeys: _imageProperties options: NSDirectoryEnumerationSkipsPackageDescendants error: nil];
-//
-//    //Copy the temporary array into the imageDirectoryContent before returning the NSMutableArray imageDirectoryContent
-//    [_imageDirectoryContent addObjectsFromArray:tempArray];
-//}
 
-    
     
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
@@ -94,6 +75,7 @@ class PlayingViewController: UIViewController {
     
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
+        
     }
     
 
