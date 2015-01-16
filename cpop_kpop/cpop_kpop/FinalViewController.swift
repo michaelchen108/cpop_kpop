@@ -12,7 +12,14 @@ class FinalViewController: UIViewController {
 
     @IBOutlet var finalScore: UILabel!
     
-    let playScreen = PlayingViewController()
+    @IBAction func playAgain(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let openingScreen = storyBoard.instantiateViewControllerWithIdentifier("OpeningViewController") as OpeningViewController
+        self.presentViewController(openingScreen, animated:true, completion:nil)
+    }
+    
+    
+
     
     
     
@@ -20,6 +27,7 @@ class FinalViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let playScreen = PlayingViewController()
         finalScore.text = NSString(format: "Score: %3.d", playScreen.getScore())
     }
 

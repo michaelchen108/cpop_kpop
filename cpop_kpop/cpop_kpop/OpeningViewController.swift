@@ -10,6 +10,12 @@ import UIKit
 
 class OpeningViewController: UIViewController {
 
+    @IBAction func play(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let playScreen = storyBoard.instantiateViewControllerWithIdentifier("PlayingViewController") as PlayingViewController
+        self.presentViewController(playScreen, animated:true, completion:nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

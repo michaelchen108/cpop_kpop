@@ -63,7 +63,7 @@ class PlayingViewController: UIViewController {
     }
     
     func getScore() -> Int {
-        return score
+        return self.score
     }
     
     
