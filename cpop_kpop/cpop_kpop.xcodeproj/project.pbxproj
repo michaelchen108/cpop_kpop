@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		473C315F1A68C90D00ACF4AC /* chou_jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C315E1A68C90D00ACF4AC /* chou_jay.jpg */; };
+		473C315F1A68C90D00ACF4AC /* chou_jay0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C315E1A68C90D00ACF4AC /* chou_jay0.jpg */; };
 		473C31621A68C98C00ACF4AC /* chou_jay1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C31601A68C98C00ACF4AC /* chou_jay1.jpg */; };
 		473C31631A68C98C00ACF4AC /* chou_jay2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 473C31611A68C98C00ACF4AC /* chou_jay2.jpg */; };
 		47AC7E001A66074F00EBB68B /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC7DFF1A66074F00EBB68B /* FinalViewController.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		473C315E1A68C90D00ACF4AC /* chou_jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay.jpg; sourceTree = "<group>"; };
+		473C315E1A68C90D00ACF4AC /* chou_jay0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay0.jpg; sourceTree = "<group>"; };
 		473C31601A68C98C00ACF4AC /* chou_jay1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay1.jpg; sourceTree = "<group>"; };
 		473C31611A68C98C00ACF4AC /* chou_jay2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay2.jpg; sourceTree = "<group>"; };
 		47AC7DFF1A66074F00EBB68B /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		4C4E945C1A65F340004B0992 /* cpop_kpop */ = {
 			isa = PBXGroup;
 			children = (
-				473C315E1A68C90D00ACF4AC /* chou_jay.jpg */,
+				473C315E1A68C90D00ACF4AC /* chou_jay0.jpg */,
 				473C31601A68C98C00ACF4AC /* chou_jay1.jpg */,
 				473C31611A68C98C00ACF4AC /* chou_jay2.jpg */,
 				4C4E945F1A65F340004B0992 /* AppDelegate.swift */,
@@ -215,7 +215,7 @@
 				473C31631A68C98C00ACF4AC /* chou_jay2.jpg in Resources */,
 				4C4E946A1A65F340004B0992 /* LaunchScreen.xib in Resources */,
 				4C4E94671A65F340004B0992 /* Images.xcassets in Resources */,
-				473C315F1A68C90D00ACF4AC /* chou_jay.jpg in Resources */,
+				473C315F1A68C90D00ACF4AC /* chou_jay0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
