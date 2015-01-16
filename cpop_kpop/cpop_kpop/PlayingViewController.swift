@@ -31,7 +31,7 @@ class PlayingViewController: UIViewController {
         
         score = 0
         
-        for (var i = 0; i < 6; i++) {
+        for (var i = 0; i < 14; i++) {
             if(i % 2 == 0)
             {
                 //even images are jay
@@ -125,7 +125,14 @@ class PlayingViewController: UIViewController {
     }
     
     @IBAction func johnCho(sender: UIButton) {
-        timer.invalidate()
+        //timer.invalidate()
+        if score > retrievedHighScore.highScore {
+            highestscore.highScore = score
+            highestscore = HighScore()
+            highestscore.highScore = score
+            SaveHighScore().ArchiveHighScore(highScore: highestscore)
+            highScore.text = NSString(format: "High Score: %3.d", score)
+        }
         if isJay != true {
             updateScore()
             setImage()
@@ -135,13 +142,7 @@ class PlayingViewController: UIViewController {
             displayScoreScreen()
         }
         
-        if score > retrievedHighScore.highScore {
-            highestscore.highScore = score
-            highestscore = HighScore()
-            highestscore.highScore = score
-            SaveHighScore().ArchiveHighScore(highScore: highestscore)
-            highScore.text = NSString(format: "High Score: %3.d", score)
-        }
+        
 
     }
     

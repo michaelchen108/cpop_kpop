@@ -24,8 +24,10 @@ class FinalViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        finalScore.text = NSString(format: "Score: %3.d", finishedScore)
+        println("hi score is \(finishedScore)")
+        if finishedScore > 0{
+            finalScore.text = NSString(format: "Score: %3.d", finishedScore)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +36,6 @@ class FinalViewController: UIViewController {
     }
     
     func setScore(gameScore: Int) {
-        
         finishedScore = gameScore
     }
     
