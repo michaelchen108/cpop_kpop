@@ -19,10 +19,7 @@ class PlayingViewController: UIViewController {
     var highestscore = HighScore()
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
     var counter = 0
-    var jayImageCache = [Int: UIImage]()
-    var johnImageCache = [Int: UIImage]()
-    var chosenJayPictures = []
-    var chosenJohnPictures = []
+    var imageCache = [Int: UIImage]()
     
 
 
@@ -31,11 +28,18 @@ class PlayingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        for (var i = 0; i < 3; i++) {
-            jayImageCache[i] = UIImage(named: "chou_jay \(i) .jpg")
+        for (var i = 0; i < 6; i++) {
+            if(i % 2 == 0)
+            {
+                imageCache[i] = UIImage(named: "chou_jay\(i/2).jpg")
+            }
+            else
+            {
+                imageCache[i] = UIImage(named: "cho_john\(i/2).jpg")
+            }
         }
         
-        playImage.image = jayImageCache[0]
+        playImage.image = imageCache[Int(arc4random_uniform(UInt32(imageCache.count)))]
         
         
         let tentativeHighScore = retrievedHighScore.highScore
@@ -75,7 +79,7 @@ class PlayingViewController: UIViewController {
     
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
-        
+        playImage.image = imageCache[Int(arc4random_uniform(UInt32(imageCache.count)))]
     }
     
 
