@@ -18,8 +18,8 @@ class PlayingViewController: UIViewController {
     var userDefaults = NSUserDefaults.standardUserDefaults()
     var highestscore = HighScore()
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
-    var counter = 0
     var imageCache = [Int: UIImage]()
+    var isJay = false
     
 
 
@@ -31,15 +31,17 @@ class PlayingViewController: UIViewController {
         for (var i = 0; i < 6; i++) {
             if(i % 2 == 0)
             {
+                //even images are jay
                 imageCache[i] = UIImage(named: "chou_jay\(i/2).jpg")
             }
             else
             {
+                //odd images are john
                 imageCache[i] = UIImage(named: "cho_john\(i/2).jpg")
             }
         }
         
-        playImage.image = imageCache[Int(arc4random_uniform(UInt32(imageCache.count)))]
+        setImage()
         
         
         let tentativeHighScore = retrievedHighScore.highScore
@@ -57,11 +59,22 @@ class PlayingViewController: UIViewController {
         */
         
     }
+    
+    
+    func setImage () {
+        var randInt = Int(arc4random_uniform(UInt32(imageCache.count)))
+        if randInt%2 == 0 {
+            isJay = true
+        } else {
+            isJay = false
+        }
+        playImage.image = imageCache[randInt]
+    }
 
     
     @IBAction func jayChou(sender: UIButton) {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
-        score = score + 1
+
         
         //currentScore.text = "Score: \(score)"
         
@@ -75,11 +88,24 @@ class PlayingViewController: UIViewController {
             SaveHighScore().ArchiveHighScore(highScore: highestscore)
             highScore.text = NSString(format: "High Score: %3.d", score)
         }
+        
+        if isJay {
+            score = score + 1
+            setImage()
+        } else {
+            
+        }
     }
     
     @IBAction func johnCho(sender: UIButton) {
         timer.invalidate()
-        playImage.image = imageCache[Int(arc4random_uniform(UInt32(imageCache.count)))]
+        if isJay != true {
+            score = score + 1
+            setImage()
+        } else {
+            
+        }
+
     }
     
 
