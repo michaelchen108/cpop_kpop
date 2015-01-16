@@ -20,6 +20,7 @@ class PlayingViewController: UIViewController {
     var retrievedHighScore = SaveHighScore().RetrieveHighScore() as HighScore
     var imageCache = [Int: UIImage]()
     var isJay = false
+    var disableTimer = false
     
 
 
@@ -44,6 +45,8 @@ class PlayingViewController: UIViewController {
         }
         
         setImage()
+        callForWait()
+        
         
         
         let tentativeHighScore = retrievedHighScore.highScore
@@ -62,6 +65,29 @@ class PlayingViewController: UIViewController {
         
     }
     
+    
+    func callForWait(){
+        //setting the delay time 1secs.
+        let delay = 1 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            //call the method which have the steps after delay.
+            if self.disableTimer {
+                self.disableTimer = false
+            } else {
+                self.stepsAfterDelay()
+            }
+        }
+        
+    }
+    
+    
+    func stepsAfterDelay(){
+        displayScoreScreen()
+    }
+    
+    
+    
     func getScore() -> Int {
         return self.score
     }
@@ -79,7 +105,6 @@ class PlayingViewController: UIViewController {
 
     
     @IBAction func jayChou(sender: UIButton) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
         
         if score > retrievedHighScore.highScore {
             highestscore.highScore = score
@@ -92,6 +117,8 @@ class PlayingViewController: UIViewController {
         if isJay {
             updateScore()
             setImage()
+            self.disableTimer = true
+            callForWait()
         } else {
             displayScoreScreen()
         }
@@ -102,6 +129,8 @@ class PlayingViewController: UIViewController {
         if isJay != true {
             updateScore()
             setImage()
+            self.disableTimer = true
+            callForWait()
         } else {
             displayScoreScreen()
         }
@@ -114,6 +143,11 @@ class PlayingViewController: UIViewController {
             highScore.text = NSString(format: "High Score: %3.d", score)
         }
 
+    }
+    
+    func createAndStartTimer() {
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timer", userInfo: nil, repeats: false)
+        timer.fire()
     }
     
     
