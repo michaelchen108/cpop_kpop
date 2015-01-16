@@ -93,7 +93,7 @@ class PlayingViewController: UIViewController {
             score = score + 1
             setImage()
         } else {
-            
+            self.navigationController.pushViewController(FinalViewController, animated: true)
         }
     }
     
@@ -103,7 +103,7 @@ class PlayingViewController: UIViewController {
             score = score + 1
             setImage()
         } else {
-            
+            self.navigationController.pushViewController(FinalViewController, animated: true)
         }
 
     }
