@@ -16,7 +16,7 @@ class FinalViewController: UIViewController {
 
     @IBAction func playAgain(sender: UIButton) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let openingScreen = storyBoard.instantiateViewControllerWithIdentifier("OpeningViewController") as OpeningViewController
+        let openingScreen = storyBoard.instantiateViewControllerWithIdentifier("SecondOpeningViewController") as SecondOpeningViewController
         self.presentViewController(openingScreen, animated:true, completion:nil)
     }
     

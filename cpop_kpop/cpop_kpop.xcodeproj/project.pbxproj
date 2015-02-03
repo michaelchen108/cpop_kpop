@@ -21,6 +21,9 @@
 		47CD64DE1A69B5C2004975D5 /* chou_jay4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CD64D01A69B5C2004975D5 /* chou_jay4.jpg */; };
 		47CD64DF1A69B5C2004975D5 /* chou_jay5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CD64D11A69B5C2004975D5 /* chou_jay5.jpg */; };
 		47CD64E01A69B5C2004975D5 /* chou_jay6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CD64D21A69B5C2004975D5 /* chou_jay6.jpg */; };
+		4C09B1241A8050710078E8F7 /* jayChou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C09B1231A8050710078E8F7 /* jayChou.jpg */; };
+		4C09B1261A80507B0078E8F7 /* johnCho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C09B1251A80507B0078E8F7 /* johnCho.jpg */; };
+		4C09B1281A8050A20078E8F7 /* SecondOpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09B1271A8050A20078E8F7 /* SecondOpeningViewController.swift */; };
 		4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E945F1A65F340004B0992 /* AppDelegate.swift */; };
 		4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E94611A65F340004B0992 /* OpeningViewController.swift */; };
 		4C4E94651A65F340004B0992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E94631A65F340004B0992 /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 		47CD64D01A69B5C2004975D5 /* chou_jay4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay4.jpg; sourceTree = "<group>"; };
 		47CD64D11A69B5C2004975D5 /* chou_jay5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay5.jpg; sourceTree = "<group>"; };
 		47CD64D21A69B5C2004975D5 /* chou_jay6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chou_jay6.jpg; sourceTree = "<group>"; };
+		4C09B1231A8050710078E8F7 /* jayChou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jayChou.jpg; path = "Images.xcassets/Jay Chou.imageset/jayChou.jpg"; sourceTree = "<group>"; };
+		4C09B1251A80507B0078E8F7 /* johnCho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = johnCho.jpg; path = "Images.xcassets/John Cho.imageset/johnCho.jpg"; sourceTree = "<group>"; };
+		4C09B1271A8050A20078E8F7 /* SecondOpeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondOpeningViewController.swift; sourceTree = "<group>"; };
 		4C4E945A1A65F340004B0992 /* cpop_kpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpop_kpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E945E1A65F340004B0992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E945F1A65F340004B0992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		4C4E945C1A65F340004B0992 /* cpop_kpop */ = {
 			isa = PBXGroup;
 			children = (
+				4C09B1251A80507B0078E8F7 /* johnCho.jpg */,
+				4C09B1231A8050710078E8F7 /* jayChou.jpg */,
 				47CD64C51A69B5C2004975D5 /* cho_john0.jpg */,
 				47CD64C61A69B5C2004975D5 /* cho_john1.jpg */,
 				47CD64C71A69B5C2004975D5 /* cho_john2.jpg */,
@@ -131,6 +139,7 @@
 				4CE403C81A664F8500FB6EA9 /* HighScore.swift */,
 				4C60D6431A68FC0E008ACB6F /* FinalViewController.swift */,
 				4C4E94631A65F340004B0992 /* Main.storyboard */,
+				4C09B1271A8050A20078E8F7 /* SecondOpeningViewController.swift */,
 				4C4E94661A65F340004B0992 /* Images.xcassets */,
 				4C4E94681A65F340004B0992 /* LaunchScreen.xib */,
 				4C4E945D1A65F340004B0992 /* Supporting Files */,
@@ -256,7 +265,9 @@
 				47CD64D91A69B5C2004975D5 /* cho_john6.jpg in Resources */,
 				4C4E94671A65F340004B0992 /* Images.xcassets in Resources */,
 				47CD64DE1A69B5C2004975D5 /* chou_jay4.jpg in Resources */,
+				4C09B1261A80507B0078E8F7 /* johnCho.jpg in Resources */,
 				47CD64D71A69B5C2004975D5 /* cho_john4.jpg in Resources */,
+				4C09B1241A8050710078E8F7 /* jayChou.jpg in Resources */,
 				47CD64DD1A69B5C2004975D5 /* chou_jay3.jpg in Resources */,
 				47CD64D41A69B5C2004975D5 /* cho_john1.jpg in Resources */,
 				47CD64DB1A69B5C2004975D5 /* chou_jay1.jpg in Resources */,
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C60D6441A68FC0E008ACB6F /* FinalViewController.swift in Sources */,
+				4C09B1281A8050A20078E8F7 /* SecondOpeningViewController.swift in Sources */,
 				4C4E94801A65F7C2004B0992 /* PlayingViewController.swift in Sources */,
 				4C4E94621A65F340004B0992 /* OpeningViewController.swift in Sources */,
 				4C4E94601A65F340004B0992 /* AppDelegate.swift in Sources */,
